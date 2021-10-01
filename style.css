@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Yaldevi:wght@700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #472836;
+  font-family: "Yaldevi", sans-serif;
+  background-color: #feffbe;
+  display: grid;
+  margin: 3rem;
+}
+main {
+  display: grid;
+  background-color: #9ad2cb;
+  padding: 10 rem;
+  margin: 200 rem;
+  grid-template-rows: auto 1fr auto;
+}
+.about {
+  display: grid;
+  background-color: #ebd494;
+  grid-template-columns: 50% 50%;
+}
+h1 {
+  font-weight: bolder;
+  text-align: center;
+}
+h2 {
+  font-weight: bolder;
+}
+.block1 {
+  display: grid;
+  background-color: #d7ebba;
+  place-items: center;
+  width: 100%;
+}
+
+.block2 img {
+  display: grid;
+  width: 90%;
+  place-items: center;
+}
