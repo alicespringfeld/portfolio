@@ -17,7 +17,7 @@ main {
   background-color: #9ad2cb;
   padding: 10 rem;
   margin: 200 rem;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr 1fr;
 }
 .firstbox {
   display: grid;
@@ -37,7 +37,7 @@ h2 {
   line-height: 50px;
 }
 p {
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
 }
 
@@ -50,14 +50,14 @@ p {
   font-size: 3rem;
   font-weight: bolder;
   text-align: center;
-  align-items: start;
+  align-items: end;
   height: 800px;
 }
 .headline {
   display: grid;
   line-height: 1px;
   align-content: start;
-  height: 5px;
+  width: 100%;
   margin: 10px;
 }
 .block1.intro {
@@ -71,16 +71,16 @@ p {
 }
 .block2 {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   place-items: center;
   padding-bottom: 0px;
   height: 800px;
 }
 
-#image {
+.block2 img {
+  width: 100%;
   display: grid;
-  width: 500px;
-  height: 700px;
+  align-items: end;
 }
 
 #navbar {
@@ -90,7 +90,9 @@ p {
   background-color: #ebd494;
   grid-gap: 1.5em;
   padding: 0 40px;
-  grid-row: row-end;
+}
+.block2 #navbar {
+  align-items: end;
 }
 #links {
   display: grid;
@@ -122,4 +124,61 @@ p {
   font-size: 15px;
   align-content: center;
   padding: 20px;
+}
+.thirdbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 60px;
+  align-items: start;
+  padding: 10px;
+}
+.skill1 {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: transparent;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin: 20px;
+}
+.skill1 img {
+  height: 100px;
+}
+.skill2 {
+  display: grid;
+  border: transparent;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin: 20px;
+}
+.skill3 {
+  display: grid;
+  border: transparent;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin: 20px;
+}
+.skill1 h2 {
+  text-align: center;
+}
+.skill1 .icon {
+  text-align: center;
+}
+.skill2 h2 {
+  text-align: center;
+}
+.skill2 .icon {
+  text-align: center;
+}
+.skill2 img {
+  height: 100px;
+}
+.skill3 h2 {
+  text-align: center;
+}
+.skill3 .icon {
+  text-align: center;
+}
+.skill3 img {
+  height: 100px;
+  color: #feffbe;
 }
